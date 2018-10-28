@@ -11,6 +11,8 @@ import UIKit
 class AirplaneSeatingController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
    
     let cellId = "cellId"
+    let headerId = "headerId"
+    
     let spacing: CGFloat = 8
     let numSeatsPerColumnEconomy = 200
     let numSeatsPerColumnBiz = 20
@@ -28,6 +30,7 @@ class AirplaneSeatingController: UICollectionViewController, UICollectionViewDel
         view.backgroundColor = .yellow
         collectionView.backgroundColor = .white
         collectionView.register(CustomSeatCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView.register(CustomSeatCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
@@ -91,5 +94,15 @@ class AirplaneSeatingController: UICollectionViewController, UICollectionViewDel
         return .init(width: 50, height: cellHeight)
     }
     
+    // Section headers become vertical if scrolling is horizontal.  need to fix
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        header.backgroundColor = .purple
+        return header
+    }
+ 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 50)
+    }
     
 }
