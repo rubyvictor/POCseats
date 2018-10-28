@@ -13,6 +13,8 @@
 		B1F1D8B7218313CD0030F2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F1D8B6218313CD0030F2A4 /* Assets.xcassets */; };
 		B1F1D8BA218313CD0030F2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F1D8B8218313CD0030F2A4 /* LaunchScreen.storyboard */; };
 		B1F1D8C5218313CD0030F2A4 /* POCscrollviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8C4218313CD0030F2A4 /* POCscrollviewTests.swift */; };
+		B1F1D8D22184CE240030F2A4 /* AirplaneSeatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */; };
+		B1F1D8D42184D7E70030F2A4 /* CustomSeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B1F1D8C0218313CD0030F2A4 /* POCscrollviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCscrollviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1D8C4218313CD0030F2A4 /* POCscrollviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCscrollviewTests.swift; sourceTree = "<group>"; };
 		B1F1D8C6218313CD0030F2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneSeatingController.swift; sourceTree = "<group>"; };
+		B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				B1F1D8B6218313CD0030F2A4 /* Assets.xcassets */,
 				B1F1D8B8218313CD0030F2A4 /* LaunchScreen.storyboard */,
 				B1F1D8BB218313CD0030F2A4 /* Info.plist */,
+				B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */,
+				B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */,
 			);
 			path = POCscrollview;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F1D8D22184CE240030F2A4 /* AirplaneSeatingController.swift in Sources */,
 				B1F1D8B2218313CB0030F2A4 /* ViewController.swift in Sources */,
 				B1F1D8B0218313CB0030F2A4 /* AppDelegate.swift in Sources */,
+				B1F1D8D42184D7E70030F2A4 /* CustomSeatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
