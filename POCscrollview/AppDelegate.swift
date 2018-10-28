@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         let layout = UICollectionViewFlowLayout()
         window?.rootViewController = AirplaneSeatingController(collectionViewLayout: layout)
-//        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: AirplaneTableViewController())
         return true
     }
 

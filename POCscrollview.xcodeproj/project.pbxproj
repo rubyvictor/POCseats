@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B1F1D8B0218313CB0030F2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8AF218313CB0030F2A4 /* AppDelegate.swift */; };
-		B1F1D8B2218313CB0030F2A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8B1218313CB0030F2A4 /* ViewController.swift */; };
+		B1F1D8B2218313CB0030F2A4 /* AirplaneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8B1218313CB0030F2A4 /* AirplaneTableViewController.swift */; };
 		B1F1D8B5218313CB0030F2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F1D8B3218313CB0030F2A4 /* Main.storyboard */; };
 		B1F1D8B7218313CD0030F2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F1D8B6218313CD0030F2A4 /* Assets.xcassets */; };
 		B1F1D8BA218313CD0030F2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F1D8B8218313CD0030F2A4 /* LaunchScreen.storyboard */; };
 		B1F1D8C5218313CD0030F2A4 /* POCscrollviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8C4218313CD0030F2A4 /* POCscrollviewTests.swift */; };
 		B1F1D8D22184CE240030F2A4 /* AirplaneSeatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */; };
 		B1F1D8D42184D7E70030F2A4 /* CustomSeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */; };
+		B1F1D8D82185EF8C0030F2A4 /* SeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D72185EF8C0030F2A4 /* SeatCell.swift */; };
+		B1F1D8DA2185F5670030F2A4 /* Seats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1D8D92185F5670030F2A4 /* Seats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		B1F1D8AC218313CB0030F2A4 /* POCscrollview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCscrollview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1D8AF218313CB0030F2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1F1D8B1218313CB0030F2A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1F1D8B1218313CB0030F2A4 /* AirplaneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneTableViewController.swift; sourceTree = "<group>"; };
 		B1F1D8B4218313CB0030F2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1F1D8B6218313CD0030F2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1F1D8B9218313CD0030F2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		B1F1D8C6218313CD0030F2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneSeatingController.swift; sourceTree = "<group>"; };
 		B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeatCell.swift; sourceTree = "<group>"; };
+		B1F1D8D72185EF8C0030F2A4 /* SeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCell.swift; sourceTree = "<group>"; };
+		B1F1D8D92185F5670030F2A4 /* Seats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +85,13 @@
 		B1F1D8AE218313CB0030F2A4 /* POCscrollview */ = {
 			isa = PBXGroup;
 			children = (
+				B1F1D8D62185EF540030F2A4 /* Collection View */,
+				B1F1D8D52185EF4B0030F2A4 /* Table View */,
 				B1F1D8AF218313CB0030F2A4 /* AppDelegate.swift */,
-				B1F1D8B1218313CB0030F2A4 /* ViewController.swift */,
 				B1F1D8B3218313CB0030F2A4 /* Main.storyboard */,
 				B1F1D8B6218313CD0030F2A4 /* Assets.xcassets */,
 				B1F1D8B8218313CD0030F2A4 /* LaunchScreen.storyboard */,
 				B1F1D8BB218313CD0030F2A4 /* Info.plist */,
-				B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */,
-				B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */,
 			);
 			path = POCscrollview;
 			sourceTree = "<group>";
@@ -100,6 +103,25 @@
 				B1F1D8C6218313CD0030F2A4 /* Info.plist */,
 			);
 			path = POCscrollviewTests;
+			sourceTree = "<group>";
+		};
+		B1F1D8D52185EF4B0030F2A4 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1D8B1218313CB0030F2A4 /* AirplaneTableViewController.swift */,
+				B1F1D8D72185EF8C0030F2A4 /* SeatCell.swift */,
+				B1F1D8D92185F5670030F2A4 /* Seats.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		B1F1D8D62185EF540030F2A4 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1D8D12184CE240030F2A4 /* AirplaneSeatingController.swift */,
+				B1F1D8D32184D7E70030F2A4 /* CustomSeatCell.swift */,
+			);
+			path = "Collection View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F1D8DA2185F5670030F2A4 /* Seats.swift in Sources */,
 				B1F1D8D22184CE240030F2A4 /* AirplaneSeatingController.swift in Sources */,
-				B1F1D8B2218313CB0030F2A4 /* ViewController.swift in Sources */,
+				B1F1D8B2218313CB0030F2A4 /* AirplaneTableViewController.swift in Sources */,
 				B1F1D8B0218313CB0030F2A4 /* AppDelegate.swift in Sources */,
 				B1F1D8D42184D7E70030F2A4 /* CustomSeatCell.swift in Sources */,
+				B1F1D8D82185EF8C0030F2A4 /* SeatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
