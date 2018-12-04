@@ -12,7 +12,7 @@ class CustomSeatCell: UICollectionViewCell {
     
     let redView: UIView = {
        let rv = UIView()
-        rv.backgroundColor = .red
+        rv.backgroundColor = .yellow
         rv.translatesAutoresizingMaskIntoConstraints = false
         return rv
     }()
@@ -30,7 +30,7 @@ class CustomSeatCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            redView.backgroundColor = isSelected ? .blue : .red
+            redView.backgroundColor = isSelected ? .blue : .yellow
         }
     }
     
